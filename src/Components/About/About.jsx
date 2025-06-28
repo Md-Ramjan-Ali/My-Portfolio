@@ -41,8 +41,8 @@ const About = () => {
           <span className="text-green-400">
             <Typewriter
               words={[
-                "Full Stack Web Applications",
-                "Secure Authentication Systems",
+                "Full Stack Web App",
+                "Secure Authentication",
                 "MERN Stack Projects",
                 "Real-World Solutions",
               ]}
@@ -68,7 +68,7 @@ const About = () => {
               <th className=" py-3 font-medium text-gray-400 ">Name:</th>
               <td className=" py-3 ">Md Ramjan Ali</td>
               <th className=" py-3 font-medium text-gray-400 ">Phone:</th>
-              <td className=" py-3 ">+880 1928294516</td>
+              <td className=" py-3 ">+880 1928 294516</td>
             </tr>
             <tr>
               <th className=" py-3 font-medium text-gray-400">Age:</th>

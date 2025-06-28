@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -21,9 +22,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-7">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         {/* Left - Logo */}
-        <div className="text-2xl font-bold">
-          Portfolio
-        </div>
+        <div className="text-2xl font-bold">Portfolio</div>
 
         {/* Center - Nav Links (Large screens) */}
         <div className="hidden lg:flex gap-6">
@@ -36,7 +35,7 @@ const Navbar = () => {
               offset={-70}
               spy={true}
               activeClass="text-white"
-              className="cursor-pointer capitalize text-gray-400 hover:text-green-400 transition"
+              className="cursor-pointer capitalize text-gray-400 hover:text-white transition"
             >
               {link}
             </Link>
@@ -45,14 +44,16 @@ const Navbar = () => {
 
         {/* Right - Resume Button (Large screens) */}
         <div className="hidden lg:block">
-          <a
+          <motion.a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-sm transition"
+            className=" inline-block  px-6 py-2 font-medium text-white group bg-[#17171d] overflow-hidden rounded-full border border-white"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            View Resume
-          </a>
+            Resume
+          </motion.a>
         </div>
 
         {/* Mobile Menu Icon */}

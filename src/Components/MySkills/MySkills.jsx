@@ -19,14 +19,15 @@ const skills = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-4xl" /> },
   { name: "CSS3", icon: <FaCss3Alt className="text-blue-500 text-4xl" /> },
   {
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss className="text-teal-300 text-4xl" />,
+  },
+  {
     name: "JavaScript",
     icon: <SiJavascript className="text-yellow-400 text-4xl" />,
   },
   { name: "React.js", icon: <FaReact className="text-cyan-400 text-4xl" /> },
-  {
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss className="text-teal-300 text-4xl" />,
-  },
+
   { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl" /> },
   {
     name: "Express.js",
@@ -66,15 +67,30 @@ const MySkills = () => {
           My Skills
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: false }}
+        >
           {skills.map((skill, idx) => (
             <motion.div
               key={idx}
-              className="bg-[#1e1f24] hover:scale-105 delay-100 cursor-pointer w-full h-36 rounded-xl flex flex-col justify-center items-center gap-3 shadow-xl hover:shadow-xl transition-all"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2, delay: idx * 0.2 }}
-              viewport={{ once: false }}
+              initial={{ filter: "drop-shadow(0 0 0 rgba(0,153,255,0))" }}
+              animate={{
+                filter: [
+                  "drop-shadow(0 0 0 rgba(0,153,255,0))",
+                  "drop-shadow(0 4px 20px rgba(0,153,255,0.3))",
+                  "drop-shadow(0 0 0 rgba(0,153,255,0))",
+                ],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              className="bg-[#1e1f24] hover:scale-105 delay-100 cursor-pointer w-full h-36 rounded-xl flex flex-col justify-center items-center gap-3 shadow-xl hover:shadow-xl transition-all "
             >
               <div>{skill.icon}</div>
               <h4 className="text-lg font-semibold text-gray-100">
@@ -82,7 +98,7 @@ const MySkills = () => {
               </h4>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
