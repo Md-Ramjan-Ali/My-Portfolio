@@ -132,12 +132,14 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               type="submit"
-              className="bg-green-500 text-white w-full py-3 rounded mt-6 font-semibold hover:bg-green-600 transition"
+              className="bg-[#ff014f] text-white w-full py-3 rounded mt-6 font-semibold hover:bg-[#ff014dea] transition"
             >
               SEND MESSAGE
-            </button>
+            </motion.button>
           </form>
         </motion.div>
       </div>

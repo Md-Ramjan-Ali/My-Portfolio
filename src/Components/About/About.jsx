@@ -36,24 +36,9 @@ const About = () => {
         <p className="text-[#ff014f] text-sm uppercase tracking-wide">
           About Me
         </p>
-        <h2 className="text-3xl font-bold leading-snug">
-          I Develop{" "}
-          <span className="text-[#ff014f]">
-            <Typewriter
-              words={[
-                "Full Stack Web App",
-                "Secure Authentication",
-                "MERN Stack Projects",
-                "Real-World Solutions",
-              ]}
-              loop={true}
-              cursor
-              cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={20}
-              delaySpeed={1500}
-            />
-          </span>
+        <h2 className="text-3xl md:text-4xl font-bold leading-snug">
+          I Develop Web Applications.
+         
         </h2>
         <p className="text-gray-300 leading-relaxed">
           I'm a passionate full-stack web developer focused on building
@@ -86,7 +71,7 @@ const About = () => {
         </table>
 
         <div className="pt-4">
-          <p className="text-[#ff014f] font-signature text-lg">Md Ramjan Ali</p>
+          <p className="text-gray-400 font-bold text-xl uppercase">Md.Ramjan Ali</p>
           <p className="text-sm text-gray-400">MERN Stack Developer</p>
         </div>
       </div>

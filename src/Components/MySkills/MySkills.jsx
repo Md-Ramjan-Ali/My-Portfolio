@@ -49,7 +49,7 @@ const MySkills = () => {
     >
       <div className="max-w-6xl w-full text-center">
         <motion.p
-          className="text-pink-500 uppercase tracking-widest text-sm font-semibold mb-2"
+          className="text-[#ff014f] uppercase tracking-widest text-sm font-semibold mb-2"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2 }}

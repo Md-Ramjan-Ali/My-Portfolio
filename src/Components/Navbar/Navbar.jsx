@@ -48,7 +48,7 @@ const Navbar = () => {
             href=""
             target="_blank"
             rel="noopener noreferrer"
-            className=" inline-block  px-6 py-2 font-medium text-white group bg-[#ff014f] overflow-hidden rounded-full "
+            className=" inline-block  px-6 py-2 font-extrabold text-white group bg-[#ff014f] overflow-hidden rounded-full "
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
