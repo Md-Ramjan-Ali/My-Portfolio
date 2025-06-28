@@ -35,7 +35,7 @@ const MyEducation = () => {
           transition={{ duration: 2 }}
           viewport={{ once: false }}
         >
-          <p className="text-green-400 text-sm tracking-[5px] uppercase">
+          <p className="text-[#ff014f]  text-sm tracking-[5px] uppercase">
             Education
           </p>
           <h2 className="text-4xl font-bold text-white">My Education</h2>
@@ -50,13 +50,12 @@ const MyEducation = () => {
               <motion.div
                 key={index}
                 className="flex gap-4 group cursor-pointer"
-               
                 initial={{ x: -60, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 4 }}
                 viewport={{ once: false }}
               >
-                <div className="border border-gray-600 p-3 rounded-lg h-fit transition-all duration-300 group-hover:bg-green-600">
+                <div className="border border-gray-600 p-3 rounded-lg h-fit transition-all duration-300 group-hover:bg-[#ff014f] ">
                   <FaGraduationCap size={24} className="text-white" />
                 </div>
                 <div>

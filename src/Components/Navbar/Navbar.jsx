@@ -45,10 +45,10 @@ const Navbar = () => {
         {/* Right - Resume Button (Large screens) */}
         <div className="hidden lg:block">
           <motion.a
-            href="/resume.pdf"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
-            className=" inline-block  px-6 py-2 font-medium text-white group bg-[#17171d] overflow-hidden rounded-full border border-white"
+            className=" inline-block  px-6 py-2 font-medium text-white group bg-[#ff014f] overflow-hidden rounded-full "
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -81,7 +81,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="/resume.pdf"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-sm transition"

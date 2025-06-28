@@ -66,7 +66,7 @@ const MyExperience = () => {
           viewport={{ once: false }}
         >
           <p
-            className="text-green-400 font-medium  uppercase "
+            className="text-[#ff014f]  font-medium  uppercase "
             style={{ letterSpacing: "8px" }}
           >
             Learning Experience
@@ -89,8 +89,8 @@ const MyExperience = () => {
             </span>
           </h2> */}
           <h2 className="text-4xl font-bold text-white">
-            I am Learning{" "}
-            <span className="text-2xl text-green-400">
+            I am Learning More Technologies
+            {/* <span className="text-2xl text-[#ff014f] ">
               <Typewriter
                 words={[
                   "Modern Web Technologies",
@@ -104,7 +104,7 @@ const MyExperience = () => {
                 deleteSpeed={20}
                 delaySpeed={1500}
               />
-            </span>
+            </span> */}
           </h2>
           <p className="">
             Though I am a fresher, I have hands-on experience through intensive
@@ -127,11 +127,13 @@ const MyExperience = () => {
                 transition={{ delay: index * 0.2, duration: 0.6 }}
                 viewport={{ once: false }}
               >
-                <div className="group-hover:bg-green-500 border border-gray-500  p-3 rounded-lg h-fit shadow-md">
+                <div className="group-hover:bg-[#ff014f]  border border-gray-500  p-3 rounded-lg h-fit shadow-md">
                   <FaBriefcase size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-white">
+                    {item.title}
+                  </h3>
                   <p className="text-sm font-medium ">
                     {item.company} <span className="">({item.duration})</span>
                   </p>

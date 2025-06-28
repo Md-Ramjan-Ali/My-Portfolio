@@ -33,12 +33,12 @@ const About = () => {
         data-aos-duration="2000"
         data-aos-once="false"
       >
-        <p className="text-green-400 text-sm uppercase tracking-wide">
+        <p className="text-[#ff014f] text-sm uppercase tracking-wide">
           About Me
         </p>
         <h2 className="text-3xl font-bold leading-snug">
           I Develop{" "}
-          <span className="text-green-400">
+          <span className="text-[#ff014f]">
             <Typewriter
               words={[
                 "Full Stack Web App",
@@ -86,7 +86,7 @@ const About = () => {
         </table>
 
         <div className="pt-4">
-          <p className="text-green-400 font-signature text-lg">Md Ramjan Ali</p>
+          <p className="text-[#ff014f] font-signature text-lg">Md Ramjan Ali</p>
           <p className="text-sm text-gray-400">MERN Stack Developer</p>
         </div>
       </div>
