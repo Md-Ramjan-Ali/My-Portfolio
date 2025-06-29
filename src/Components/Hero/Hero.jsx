@@ -3,7 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-import heroImg from "../../assets/portfolio image.png";
+
+import heroImg from "../../assets/ramjans.png";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -18,7 +19,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen pt-32 md:pt-20 flex flex-col-reverse md:flex-row items-center justify-between px-4 lg:px-20 bg-[#212428] text-white "
+      className="min-h-screen pt-32 md:pt-20 flex flex-col-reverse md:flex-row items-center justify-between  bg-[#212428] text-white "
     >
       {/* Left - Text Area */}
       <motion.div
@@ -130,7 +131,7 @@ const Hero = () => {
         <img
           src={heroImg}
           alt="Ramjan"
-          className="w-60 h-60 md:w-80 md:h-80 object-center rounded-full shadow-lg"
+          className="h-full object-center rounded-full"
         />
       </motion.div>
     </section>

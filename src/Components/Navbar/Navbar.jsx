@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
     "home",
@@ -16,7 +17,10 @@ const Navbar = () => {
     "contact",
   ];
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const playClickSound = () => {
+    const audio = new Audio("/mouse-click-153941.mp3");
+    audio.play();
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5">
@@ -35,6 +39,7 @@ const Navbar = () => {
               offset={-70}
               spy={true}
               activeClass="text-white"
+              onClick={playClickSound}
               className="cursor-pointer capitalize text-gray-400 hover:text-white transition"
             >
               {link}

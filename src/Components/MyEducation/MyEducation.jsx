@@ -7,7 +7,7 @@ const educationData = [
   {
     degree: "Complete Web Development Course",
     institute: "Programming Hero",
-    duration: "2023 - Running",
+    duration: "2023 - 2025",
     description:
       "Currently pursuing a complete web development course focusing on modern technologies including React, Node.js, MongoDB, Firebase, and Express.",
   },
@@ -16,7 +16,7 @@ const educationData = [
     institute: "National University",
     duration: "2021 - Running",
     description:
-      "Completed Bachelor's degree under National University of Bangladesh while learning programming alongside.",
+      "Pursuing a Bachelor of Arts degree at the National University of Bangladesh while actively learning and building projects in programming alongside.",
   },
 ];
 

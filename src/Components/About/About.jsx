@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import img from "../../assets/portfolio image.png";
+import about from "../../assets/heroPortfolio.png";
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
       >
         <div className="bg-[#1e1f24] rounded-xl shadow-lg">
           <img
-            src={img}
+            src={about}
             alt="Md Ramjan Ali"
             className="w-[450px] h-full rounded-xl object-center"
           />
@@ -38,7 +38,6 @@ const About = () => {
         </p>
         <h2 className="text-3xl md:text-4xl font-bold leading-snug">
           I Develop Web Applications.
-         
         </h2>
         <p className="text-gray-300 leading-relaxed">
           I'm a passionate full-stack web developer focused on building
@@ -71,7 +70,9 @@ const About = () => {
         </table>
 
         <div className="pt-4">
-          <p className="text-gray-400 font-bold text-xl uppercase">Md.Ramjan Ali</p>
+          <p className="text-gray-400 font-bold text-xl uppercase">
+            Md.Ramjan Ali
+          </p>
           <p className="text-sm text-gray-400">MERN Stack Developer</p>
         </div>
       </div>
