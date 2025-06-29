@@ -53,8 +53,9 @@ const Hero = () => {
           modern frontend tools.
         </p>
         <motion.a
-          href=""
+          href="/resume.pdf"
           target="_blank"
+          download="Ramjan_Resume.pdf"
           rel="noopener noreferrer"
           className="flex w-fit gap-2  px-6 py-3 font-medium text-white group bg-[#ff014f] overflow-hidden rounded-full "
           whileHover={{ scale: 1.05 }}

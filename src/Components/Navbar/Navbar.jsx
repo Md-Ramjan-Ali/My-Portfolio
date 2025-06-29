@@ -45,7 +45,7 @@ const Navbar = () => {
         {/* Right - Resume Button (Large screens) */}
         <div className="hidden lg:block">
           <motion.a
-            href="https://drive.google.com/file/d/18iUGYMzRqqTm0hUJa9i8-F8hyQaloMAi/view?usp=sharing"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className=" inline-block  px-6 py-2 font-extrabold text-white group bg-[#ff014f] overflow-hidden rounded-full "
@@ -81,7 +81,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href=""
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-sm transition"

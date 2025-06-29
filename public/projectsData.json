@@ -38,9 +38,9 @@
       "Express",
       "MongoDB"
     ],
-    "techStack": ["React", "Firebase", "MongoDB", "Tailwind CSS"],
+    "techStack": ["React", "Firebase", "MongoDB", "Express"],
     "description": "A marketplace where users can post freelance tasks and others can bid or join to complete them.",
-    "liveLink": "https://freelance-task-marketplace.web.app",
+    "liveLink": "https://freelance-task-marketpla-af2da.web.app/",
     "githubClient": "https://github.com/Md-Ramjan-Ali/Freelance-Task-Marketplace-client",
     "challenges": "Implementing real-time task update and role-based dashboard.",
     "futurePlans": "Add escrow payment and chat features."
@@ -51,19 +51,10 @@
     "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
     "type": "Website",
     "country": "Bangladesh",
-    "languages": [
-      "HTML",
-      "CSS",
-      "Tailwind",
-      "JS",
-      "React",
-      "Firebase",
-      "Express",
-      "MongoDB"
-    ],
+    "languages": ["HTML", "CSS", "Tailwind", "JS", "React", "Firebase"],
     "techStack": ["React", "Tailwind", "Firebase"],
     "description": "An event discovery platform allowing users to browse, filter, and register for local events.",
-    "liveLink": "https://event-explorer.web.app",
+    "liveLink": "https://event-explorer-91db7.web.app/",
     "githubClient": "https://github.com/Md-Ramjan-Ali/Event-Explorer",
     "challenges": "Implementing event filtering with location and date.",
     "futurePlans": "Integrate Google Maps and RSVP calendar sync."

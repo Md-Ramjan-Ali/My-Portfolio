@@ -59,26 +59,30 @@ const Projects = () => {
           >
             <h3 className="text-2xl font-bold mb-2">{project.project_name}</h3>
             <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={() => {
                 setSelectedProject(project);
                 document.getElementById("my_project_model").showModal();
               }}
-              className="inline-block border px-4 py-2 rounded hover:bg-white hover:text-black transition text-sm cursor-pointer"
+              className="inline-block border px-4 py-2 rounded hover:bg-[#ff014f] text-white hover:border-0 transition text-sm cursor-pointer"
             >
               View Project →
-            </button>
+            </motion.button>
           </motion.div>
 
           {/* Tech Stack Tags */}
           <div className="absolute bottom-6 right-6 flex flex-wrap gap-3">
             {project.techStack.map((tech, i) => (
-              <span
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 key={i}
-                className="border border-gray-500 px-4 py-2 text-sm rounded-md hover:bg-white hover:text-black transition"
+                className="border border-gray-500 px-4 py-2 hover:border-0 text-sm rounded-md hover:bg-[#ff014f] text-white transition cursor-pointer"
               >
                 {tech}
-              </span>
+              </motion.span>
             ))}
           </div>
         </div>
