@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
+import ProjectDetailsModal from "../ProjectDetailsModal/ProjectDetailsModal";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     axios.get("projectsData.json").then((res) => setProjects(res.data));
@@ -57,7 +59,13 @@ const Projects = () => {
           >
             <h3 className="text-2xl font-bold mb-2">{project.project_name}</h3>
             <p className="text-sm text-gray-300 mb-4">{project.description}</p>
-            <button className="inline-block border px-4 py-2 rounded hover:bg-white hover:text-black transition text-sm">
+            <button
+              onClick={() => {
+                setSelectedProject(project);
+                document.getElementById("my_project_model").showModal();
+              }}
+              className="inline-block border px-4 py-2 rounded hover:bg-white hover:text-black transition text-sm cursor-pointer"
+            >
               View Project →
             </button>
           </motion.div>
@@ -75,6 +83,10 @@ const Projects = () => {
           </div>
         </div>
       ))}
+      {/* open project model */}
+      {selectedProject && (
+        <ProjectDetailsModal project={selectedProject}></ProjectDetailsModal>
+      )}
     </div>
   );
 };
