@@ -2,8 +2,8 @@
   {
     "id": 1,
     "project_name": "Volunteer Management System",
-    "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
-    "project_details_image": "https://i.ibb.co/9HmRN7Jx/Screenshot-2025-06-30-010334.png",
+    "project_image": "https://i.ibb.co/N24vjvbr/Screenshot-2025-06-30-024948.png",
+    "project_details_image": "https://i.ibb.co/N24vjvbr/Screenshot-2025-06-30-024948.png",
     "type": "Website",
     "country": "Bangladesh",
     "languages": [
@@ -50,8 +50,8 @@
   {
     "id": 3,
     "project_name": "Event Explorer",
-    "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
-    "project_details_image": "https://i.ibb.co/9HmRN7Jx/Screenshot-2025-06-30-010334.png",
+    "project_image": "https://i.ibb.co/s9FYJ08Y/Screenshot-2025-06-30-030743.png",
+    "project_details_image": "https://i.ibb.co/s9FYJ08Y/Screenshot-2025-06-30-030743.png",
     "type": "Website",
     "country": "Bangladesh",
     "languages": ["HTML", "CSS", "Tailwind", "JS", "React", "Firebase"],

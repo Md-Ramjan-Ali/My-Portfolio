@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5 px-15 lg:px-0">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         {/* Left - Logo */}
-        <div className="text-2xl font-bold">Portfolio</div>
+        <div className="flex items-end gap-1">
+          <span>
+            <img className="w-10" src={logo} alt="" />
+          </span>{" "}
+          <span className="text-2xl font-bold">AMJAN</span>
+        </div>
 
         {/* Center - Nav Links (Large screens) */}
         <div className="hidden lg:flex gap-6">
