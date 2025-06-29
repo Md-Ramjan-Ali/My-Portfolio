@@ -45,9 +45,9 @@ const MySkills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen flex items-center justify-center bg-[#212428] text-white px-6 py-20"
+      className="min-h-screen flex items-center justify-center bg-[#212428] text-white py-20"
     >
-      <div className="max-w-6xl w-full text-center">
+      <div className="text-center w-full">
         <motion.p
           className="text-[#ff014f] uppercase tracking-widest text-sm font-semibold mb-2"
           initial={{ opacity: 0, x: 100 }}

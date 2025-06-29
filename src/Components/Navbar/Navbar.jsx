@@ -19,7 +19,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-7">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         {/* Left - Logo */}
         <div className="text-2xl font-bold">Portfolio</div>
@@ -45,7 +45,7 @@ const Navbar = () => {
         {/* Right - Resume Button (Large screens) */}
         <div className="hidden lg:block">
           <motion.a
-            href=""
+            href="https://drive.google.com/file/d/18iUGYMzRqqTm0hUJa9i8-F8hyQaloMAi/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className=" inline-block  px-6 py-2 font-extrabold text-white group bg-[#ff014f] overflow-hidden rounded-full "

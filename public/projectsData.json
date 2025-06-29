@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "project_name": "Volunteer Management System",
+    "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
+    "techStack": ["React", "Firebase", "Express", "MongoDB"],
+    "description": "A platform where organizations can post volunteer opportunities and users can join as volunteers.",
+    "liveLink": "https://volunteer-management-web-c6c6d.web.app/",
+    "githubClient": "https://github.com/Md-Ramjan-Ali/Volunteer-Management-System",
+    "challenges": "Managing CRUD operations with role-based permissions.",
+    "futurePlans": "Add admin analytics and volunteer badges."
+  },
+  {
+    "id": 2,
+    "project_name": "Freelance Task Marketplace",
+    "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
+    "techStack": ["React", "Firebase", "MongoDB", "Tailwind CSS"],
+    "description": "A marketplace where users can post freelance tasks and others can bid or join to complete them.",
+    "liveLink": "https://freelance-task-marketplace.web.app",
+    "githubClient": "https://github.com/Md-Ramjan-Ali/Freelance-Task-Marketplace-client",
+    "challenges": "Implementing real-time task update and role-based dashboard.",
+    "futurePlans": "Add escrow payment and chat features."
+  },
+  {
+    "id": 3,
+    "project_name": "Event Explorer",
+    "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
+    "techStack": ["React", "Tailwind", "Firebase"],
+    "description": "An event discovery platform allowing users to browse, filter, and register for local events.",
+    "liveLink": "https://event-explorer.web.app",
+    "githubClient": "https://github.com/Md-Ramjan-Ali/Event-Explorer",
+    "challenges": "Implementing event filtering with location and date.",
+    "futurePlans": "Integrate Google Maps and RSVP calendar sync."
+  }
+]
