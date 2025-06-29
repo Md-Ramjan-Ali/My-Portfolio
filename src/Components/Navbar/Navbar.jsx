@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5 px-15 lg:px-0">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
         {/* Left - Logo */}
         <div className="text-2xl font-bold">Portfolio</div>
@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="lg:hidden z-50" onClick={toggleMenu}>
+        <div className=" lg:hidden z-50" onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </div>
       </div>

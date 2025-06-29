@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen pt-24 lg:pt-0 bg-[#212428] text-white flex flex-col lg:flex-row items-center gap-12"
+      className="min-h-screen pt-24 lg:pt-0 bg-[#212428] text-white flex flex-col lg:flex-row items-center gap-5"
     >
       {/* Left Side - Image */}
       <motion.div
@@ -28,7 +28,7 @@ const About = () => {
 
       {/* Right Side - Content */}
       <div
-        className="lg:w-1/2 space-y-6"
+        className="lg:w-1/2 space-y-6 px-2"
         data-aos="fade-up"
         data-aos-duration="2000"
         data-aos-once="false"
@@ -47,26 +47,42 @@ const About = () => {
 
         {/* Info Table */}
         <table className="w-full text-sm text-gray-300 border-t border-b border-gray-600 py-4 text-left">
-          <tbody>
-            <tr>
-              <th className=" py-3 font-medium text-gray-400 ">Name:</th>
-              <td className=" py-3 ">Md Ramjan Ali</td>
-              <th className=" py-3 font-medium text-gray-400 ">Phone:</th>
-              <td className=" py-3 ">+880 1928 294516</td>
-            </tr>
-            <tr>
-              <th className=" py-3 font-medium text-gray-400">Age:</th>
-              <td className=" py-3">22 Years</td>
-              <th className=" py-3 font-medium text-gray-400">Email:</th>
-              <td className=" py-3">gmramjanali8888.com</td>
-            </tr>
-            <tr>
-              <th className=" py-3 font-medium text-gray-400">Occupation:</th>
-              <td className=" py-3">Full Stack Developer</td>
-              <th className=" py-3 font-medium text-gray-400">Nationality:</th>
-              <td className=" py-3">Bangladeshi</td>
-            </tr>
-          </tbody>
+          {/* Responsive Info Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-4 text-sm text-gray-300">
+            {/* Row 1 */}
+            <div className="flex flex-col md:flex-row md:items-center gap-2">
+              <span className="font-medium text-gray-400 md:w-32">Name:</span>
+              <span className="">Md. Ramjan Ali</span>
+            </div>
+            <div className="flex flex-col md:flex-row md:items-center gap-2">
+              <span className="font-medium text-gray-400 md:w-32">Phone:</span>
+              <span>+880 1928 294516</span>
+            </div>
+
+            {/* Row 2 */}
+            <div className="flex flex-col md:flex-row md:items-center gap-2">
+              <span className="font-medium text-gray-400 md:w-32">Age:</span>
+              <span>22 Years</span>
+            </div>
+            <div className="flex flex-col md:flex-row md:items-center gap-2">
+              <span className="font-medium text-gray-400 md:w-32">Email:</span>
+              <span>gmramjanali8888@gamil.com</span>
+            </div>
+
+            {/* Row 3 */}
+            <div className="flex flex-col md:flex-row md:items-center gap-2">
+              <span className="font-medium text-gray-400 md:w-32">
+                Occupation:
+              </span>
+              <span>Full Stack Developer</span>
+            </div>
+            <div className="flex flex-col md:flex-row md:items-center gap-2">
+              <span className="font-medium text-gray-400 md:w-32">
+                Nationality:
+              </span>
+              <span>Bangladeshi</span>
+            </div>
+          </div>
         </table>
 
         <div className="pt-4">

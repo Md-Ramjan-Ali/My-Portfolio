@@ -73,7 +73,7 @@ const Projects = () => {
           </motion.div>
 
           {/* Tech Stack Tags */}
-          <div className="absolute bottom-6 right-6 flex flex-wrap gap-3">
+          <div className="absolute bottom-6 right-6 hidden lg:flex flex-wrap gap-3">
             {project.techStack.map((tech, i) => (
               <motion.span
                 whileHover={{ scale: 1.05 }}

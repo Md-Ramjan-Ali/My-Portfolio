@@ -22,7 +22,7 @@ const Contact = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Left - Contact Card */}
         <motion.div
           className="bg-[#1E1F25] rounded-xl p-6 shadow-xl"
