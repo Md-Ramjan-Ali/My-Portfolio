@@ -24,7 +24,7 @@ const MyEducation = () => {
   return (
     <section
       id="education"
-      className="min-h-screen bg-[#212428] py-16 px-4 text-gray-300"
+      className="min-h-screen bg-[#212428] py-10 px-4 text-gray-300"
     >
       <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Left - Education Content */}

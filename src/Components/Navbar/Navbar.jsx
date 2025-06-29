@@ -36,7 +36,7 @@ const Navbar = () => {
               to={link}
               smooth={true}
               duration={500}
-              offset={-70}
+              offset={-80}
               spy={true}
               activeClass="text-white"
               onClick={playClickSound}

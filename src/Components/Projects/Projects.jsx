@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="bg-[#212428] text-white py-16 px-4 md:px-10 lg:px-20 space-y-14"
+      className="bg-[#212428] text-white py-10 px-4 space-y-14"
     >
       <div className="text-center">
         <motion.p

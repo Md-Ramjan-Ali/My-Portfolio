@@ -5,7 +5,7 @@ import contactImg from "../../assets/contactImg.png";
 
 const Contact = () => {
   return (
-    <section id="contact" className="min-h-screen bg-[#212428] py-16 px-4">
+    <section id="contact" className="min-h-screen bg-[#212428] py-10 px-4">
       <div className="text-center mb-12">
         <p
           className="uppercase text-[#ff014f]  tracking-widest mb-3"

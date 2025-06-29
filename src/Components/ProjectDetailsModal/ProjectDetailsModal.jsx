@@ -5,7 +5,7 @@ const ProjectDetailsModal = ({ project }) => {
     <dialog id="my_project_model" className="modal">
       <div className="modal-box max-w-6xl bg-[#1e1e2f] text-gray-400 p-6">
         <form method="dialog">
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-white">
+          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 hover:bg-[#ff014f] hover:border-0 text-white">
             ✕
           </button>
         </form>
@@ -14,7 +14,7 @@ const ProjectDetailsModal = ({ project }) => {
           {/* Left: Image + buttons */}
           <div>
             <img
-              src={project.project_image}
+              src={project.project_details_image}
               alt={project.project_name}
               className="rounded-xl w-full h-full mb-4"
             />

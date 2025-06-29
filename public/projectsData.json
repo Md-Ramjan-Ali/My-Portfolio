@@ -3,6 +3,7 @@
     "id": 1,
     "project_name": "Volunteer Management System",
     "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
+    "project_details_image": "https://i.ibb.co/9HmRN7Jx/Screenshot-2025-06-30-010334.png",
     "type": "Website",
     "country": "Bangladesh",
     "languages": [
@@ -26,6 +27,7 @@
     "id": 2,
     "project_name": "Freelance Task Marketplace",
     "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
+    "project_details_image": "https://i.ibb.co/9HmRN7Jx/Screenshot-2025-06-30-010334.png",
     "type": "Website",
     "country": "Bangladesh",
     "languages": [
@@ -49,6 +51,7 @@
     "id": 3,
     "project_name": "Event Explorer",
     "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
+    "project_details_image": "https://i.ibb.co/9HmRN7Jx/Screenshot-2025-06-30-010334.png",
     "type": "Website",
     "country": "Bangladesh",
     "languages": ["HTML", "CSS", "Tailwind", "JS", "React", "Firebase"],

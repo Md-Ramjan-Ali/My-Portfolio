@@ -17,7 +17,7 @@ const About = () => {
         transition={{ duration: 2 }}
         viewport={{ once: false }}
       >
-        <div className="bg-[#1e1f24] rounded-xl shadow-lg">
+        <div className="bg-[#202127] rounded-xl shadow-lg">
           <img
             src={about}
             alt="Md Ramjan Ali"
