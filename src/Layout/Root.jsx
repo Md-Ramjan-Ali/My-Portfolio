@@ -6,7 +6,7 @@ import Footer from "../Components/Footer/Footer";
 
 const Root = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Snowfall
         color="#E0F7FA"
         snowflakeCount={100}
@@ -20,7 +20,7 @@ const Root = () => {
         }}
       />
       <Navbar></Navbar>
-      <main className=" bg-[#212428] min-h-screen">
+      <main className=" bg-[#212428]">
         <Outlet></Outlet>
       </main>
       <Footer></Footer>

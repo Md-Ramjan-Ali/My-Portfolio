@@ -45,7 +45,7 @@ const MySkills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen flex items-center justify-center bg-[#212428] text-white py-20"
+      className="min-h-screen flex  items-center justify-center bg-[#212428] text-white py-20"
     >
       <div className="text-center w-full">
         <motion.p

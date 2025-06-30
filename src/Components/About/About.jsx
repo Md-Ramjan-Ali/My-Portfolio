@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen pt-24 lg:pt-0 bg-[#212428] text-white flex flex-col lg:flex-row items-center gap-5"
+      className="min-h-screen pt-24  lg:pt-0 bg-[#212428] text-white flex flex-col lg:flex-row items-center gap-5"
     >
       {/* Left Side - Image */}
       <motion.div

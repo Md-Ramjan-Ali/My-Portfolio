@@ -24,8 +24,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5 px-15 lg:px-0">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-4">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5">
+      <div className="flex justify-between items-center max-w-screen-xl mx-auto px-5 lg:px-0">
         {/* Left - Logo */}
         <div className="flex items-end gap-1">
           <span>
@@ -86,7 +86,7 @@ const Navbar = () => {
               spy={true}
               activeClass="active"
               className="block text-lg capitalize text-gray-300 hover:text-green-400 transition"
-              onClick={toggleMenu} // Close after click
+              onClick={toggleMenu}// Close after click
             >
               {link}
             </Link>

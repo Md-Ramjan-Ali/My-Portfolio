@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen pt-32 md:pt-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-5  bg-[#212428] text-white "
+      className="min-h-screen pt-32 md:pt-20  flex flex-col-reverse lg:flex-row items-center justify-between gap-5  bg-[#212428] text-white "
     >
       {/* Left - Text Area */}
       <motion.div
