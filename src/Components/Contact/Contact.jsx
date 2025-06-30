@@ -140,6 +140,7 @@ const Contact = () => {
                   name="name"
                   type="text"
                   className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
+                  required
                 />
               </div>
               <div>
@@ -148,6 +149,7 @@ const Contact = () => {
                   name="phone"
                   type="number"
                   className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
+                  required
                 />
               </div>
             </div>
@@ -158,6 +160,7 @@ const Contact = () => {
                 name="email"
                 type="email"
                 className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
+                required
               />
             </div>
 
@@ -167,6 +170,7 @@ const Contact = () => {
                 name="subject"
                 type="text"
                 className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
+                required
               />
             </div>
 
@@ -176,6 +180,7 @@ const Contact = () => {
                 name="message"
                 rows="5"
                 className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
+                required
               ></textarea>
             </div>
 
