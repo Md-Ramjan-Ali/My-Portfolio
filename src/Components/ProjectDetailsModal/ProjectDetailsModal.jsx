@@ -5,7 +5,7 @@ const ProjectDetailsModal = ({ project }) => {
     <dialog id="my_project_model" className="modal">
       <div className="modal-box max-w-6xl bg-[#1e1e2f] text-gray-400 p-6">
         <form method="dialog">
-          <button className="btn btn-sm btn-circle btn-ghost absolute top-2 left-2 md:left-auto md:right-2 hover:bg-[#ff014f] hover:border-0 text-white">
+          <button className="btn btn-sm btn-circle btn-ghost absolute top-2 right-2 hover:bg-[#ff014f] hover:border-0 text-white">
             ✕
           </button>
         </form>
