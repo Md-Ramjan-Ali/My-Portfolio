@@ -28,6 +28,8 @@ const Contact = () => {
             confirmButtonColor: "#ff014f",
             confirmButtonText: "OK",
           });
+
+          formRef.current.reset();
         },
         (error) => {
           console.log(error);
