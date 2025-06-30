@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import Navbar from "../Components/Navbar/Navbar";
 import Snowfall from "react-snowfall";
+import Footer from "../Components/Footer/Footer";
 
 const Root = () => {
   return (
@@ -22,6 +23,7 @@ const Root = () => {
       <main className=" bg-[#212428] min-h-screen">
         <Outlet></Outlet>
       </main>
+      <Footer></Footer>
     </div>
   );
 };
