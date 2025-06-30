@@ -6,6 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 import heroImg from "../../assets/ramjans.png";
 import {
   FaFacebookF,
+  FaGithub,
   FaLinkedinIn,
   FaNodeJs,
   FaReact,
@@ -87,6 +88,14 @@ const Hero = () => {
                 className="bg-[#17171d] p-2 rounded hover:scale-110 transition text-white"
               >
                 <FaFacebookF />
+              </a>
+              <a
+                href="https://github.com/Md-Ramjan-Ali"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#17171d] p-2 rounded hover:scale-110 transition text-white"
+              >
+                <FaGithub />
               </a>
               <a
                 href="www.linkedin.com/in/md-ramjan-ali-1bb369324"

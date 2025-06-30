@@ -90,21 +90,6 @@ const MyExperience = () => {
           </h2> */}
           <h2 className="text-4xl font-bold text-white">
             I am Learning More Technologies
-            {/* <span className="text-2xl text-[#ff014f] ">
-              <Typewriter
-                words={[
-                  "Modern Web Technologies",
-                  "MERN Stack",
-                  "Full Stack Development",
-                ]}
-                loop={true}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={20}
-                delaySpeed={1500}
-              />
-            </span> */}
           </h2>
           <p className="">
             Though I am a fresher, I have hands-on experience through intensive

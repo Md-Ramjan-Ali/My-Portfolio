@@ -31,7 +31,7 @@ const Navbar = () => {
           <span>
             <img className="w-10" src={logo} alt="" />
           </span>{" "}
-          <span className="text-2xl font-bold">AMJAN</span>
+          <span className="text-2xl font-extrabold">AMJAN</span>
         </div>
 
         {/* Center - Nav Links (Large screens) */}

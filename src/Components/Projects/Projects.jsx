@@ -46,7 +46,7 @@ const Projects = () => {
           <img
             src={project.project_image}
             alt={project.project_name}
-            className="w-full h-[550px] object-cover rounded-xl transform group-hover:scale-105 transition duration-500"
+            className="w-full h-[550px] object-center rounded-xl transform group-hover:scale-105 transition duration-500"
           />
 
           {/* Overlay Content */}
@@ -54,7 +54,7 @@ const Projects = () => {
             className="absolute bottom-10 left-10 bg-gray-800/50 p-6 rounded-xl max-w-sm shadow-md backdrop-blur-md"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
             <h3 className="text-2xl font-bold mb-2">{project.project_name}</h3>

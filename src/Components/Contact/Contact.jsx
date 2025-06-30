@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import contactImg from "../../assets/contactImg.png";
 
@@ -70,6 +70,14 @@ const Contact = () => {
               className="bg-[#17171d] p-2 rounded hover:scale-110 transition text-white"
             >
               <FaFacebookF />
+            </a>
+            <a
+              href="https://github.com/Md-Ramjan-Ali"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-[#17171d] p-2 rounded hover:scale-110 transition text-white"
+            >
+              <FaGithub />
             </a>
             <a
               href="www.linkedin.com/in/md-ramjan-ali-1bb369324"
