@@ -1,9 +1,39 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import contactImg from "../../assets/contactImg.png";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const formRef = useRef();
+
+  const handleSend = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_sd33vcf",
+        "template_m2flphm",
+        formRef.current,
+        "tfwHdL7osuKvzPdB5"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          Swal.fire({
+            title: "Success!",
+            text: "Message sent successfully!",
+            icon: "success",
+            confirmButtonColor: "#ff014f",
+            confirmButtonText: "OK",
+          });
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
   return (
     <section id="contact" className="min-h-screen bg-[#212428] py-10 px-4">
       <div className="text-center mb-12">
@@ -98,11 +128,16 @@ const Contact = () => {
           transition={{ duration: 3 }}
           viewport={{ once: false }}
         >
-          <form className="flex flex-col justify-between h-full text-gray-300">
+          <form
+            ref={formRef}
+            onSubmit={handleSend}
+            className="flex flex-col justify-between h-full text-gray-300"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block mb-3 text-sm">YOUR NAME</label>
                 <input
+                  name="name"
                   type="text"
                   className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
                 />
@@ -110,6 +145,7 @@ const Contact = () => {
               <div>
                 <label className="block mb-3 text-sm">PHONE NUMBER</label>
                 <input
+                  name="phone"
                   type="number"
                   className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
                 />
@@ -119,6 +155,7 @@ const Contact = () => {
             <div className="mt-4">
               <label className="block mb-3 text-sm">EMAIL</label>
               <input
+                name="email"
                 type="email"
                 className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
               />
@@ -127,6 +164,7 @@ const Contact = () => {
             <div className="mt-4">
               <label className="block mb-3 text-sm">SUBJECT</label>
               <input
+                name="subject"
                 type="text"
                 className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
               />
@@ -135,6 +173,7 @@ const Contact = () => {
             <div className="mt-4">
               <label className="block mb-3 text-sm">YOUR MESSAGE</label>
               <textarea
+                name="message"
                 rows="5"
                 className="bg-[#17171d] text-white p-3 rounded w-full focus:outline-none"
               ></textarea>
