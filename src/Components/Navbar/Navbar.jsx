@@ -66,7 +66,7 @@ const Navbar = () => {
         {/* Right - Resume Button (Large screens) */}
         <div className="hidden lg:block">
           <motion.a
-            href="/resume.pdf"
+            href="/Ramjan_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className=" inline-block  px-6 py-2 font-extrabold text-white group bg-[#ff014f] overflow-hidden rounded-full "
