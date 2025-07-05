@@ -54,7 +54,7 @@ const Hero = () => {
           modern frontend tools.
         </p>
         <motion.a
-          href="/resume.pdf"
+          href="/Ramjan_Resume.pdf"
           target="_blank"
           download="Ramjan_Resume.pdf"
           rel="noopener noreferrer"

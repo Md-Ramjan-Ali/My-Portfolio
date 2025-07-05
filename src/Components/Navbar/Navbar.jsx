@@ -102,7 +102,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="/resume.pdf"
+            href="/Ramjan_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#ff014f]  px-4 py-2 rounded text-sm transition"
