@@ -65,7 +65,7 @@ const About = () => {
               <span>22 Years</span>
             </div>
             <div className="flex flex-col md:flex-row md:items-center gap-2">
-              <span className="font-medium text-gray-400 md:w-32">Email:</span>
+              <span className="font-medium text-gray-400  md:w-32">Email:</span>
               <span>gmramjanali8888@gamil.com</span>
             </div>
 
@@ -74,7 +74,7 @@ const About = () => {
               <span className="font-medium text-gray-400 md:w-32">
                 Occupation:
               </span>
-              <span>Full Stack Developer</span>
+              <span>MERN Stack Developer</span>
             </div>
             <div className="flex flex-col md:flex-row md:items-center gap-2">
               <span className="font-medium text-gray-400 md:w-32">
