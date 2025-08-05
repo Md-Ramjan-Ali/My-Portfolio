@@ -9,7 +9,7 @@ import Projects from "../../Components/Projects/Projects";
 
 const Home = () => {
   return (
-    <div className=" text-white max-w-10/12 mx-auto">
+    <div className=" text-white max-w-screen-xl mx-auto">
       <Hero></Hero>
       <About></About>
       <MySkills></MySkills>

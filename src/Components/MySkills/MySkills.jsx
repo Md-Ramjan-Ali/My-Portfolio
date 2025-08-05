@@ -6,6 +6,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaGitAlt,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -13,6 +14,10 @@ import {
   SiFirebase,
   SiMongodb,
   SiExpress,
+  SiNextdotjs,
+  SiTypescript,
+  SiRedux,
+  SiBootstrap,
 } from "react-icons/si";
 
 const skills = [
@@ -23,11 +28,20 @@ const skills = [
     icon: <SiTailwindcss className="text-teal-300 text-4xl" />,
   },
   {
+    name: "Bootstrap",
+    icon: <SiBootstrap className="text-purple-600 text-4xl" />,
+  },
+  {
     name: "JavaScript",
     icon: <SiJavascript className="text-yellow-400 text-4xl" />,
   },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript className="text-blue-500 text-4xl" />,
+  },
   { name: "React.js", icon: <FaReact className="text-cyan-400 text-4xl" /> },
-
+  { name: "Next.js", icon: <SiNextdotjs className="text-white text-4xl" /> },
+  { name: "Redux", icon: <SiRedux className="text-purple-500 text-4xl" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-4xl" /> },
   {
     name: "Express.js",
@@ -39,6 +53,7 @@ const skills = [
     icon: <SiFirebase className="text-yellow-400 text-4xl" />,
   },
   { name: "Git", icon: <FaGitAlt className="text-red-500 text-4xl" /> },
+  { name: "GitHub", icon: <FaGithub className="text-white text-4xl" /> },
 ];
 
 const MySkills = () => {
