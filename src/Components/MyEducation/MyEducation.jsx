@@ -24,7 +24,7 @@ const MyEducation = () => {
   return (
     <section
       id="education"
-      className="min-h-screen bg-[#212428] py-10 px-4 text-gray-300"
+      className="min-h-screen bg-[#212428] py-10 px-4 xl:px-0 text-gray-300"
     >
       <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Left - Education Content */}
@@ -35,11 +35,13 @@ const MyEducation = () => {
           transition={{ duration: 2 }}
           viewport={{ once: false }}
         >
-          <p className="text-[#ff014f]  text-sm tracking-[5px] uppercase">
+          <p className="text-[#ff014f]  text-sm tracking-[5px] uppercase text-center md:text-left">
             Education
           </p>
-          <h2 className="text-4xl font-bold text-white">My Education</h2>
-          <p className="text-gray-400">
+          <h2 className="text-3xl xl:text-4xl font-bold text-white text-center md:text-left">
+            My Education
+          </h2>
+          <p className="text-gray-400 text-center md:text-left">
             My academic background helped shape my logical mindset, while my web
             development journey gave me hands-on skills with real-world
             projects.

@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen pt-32 md:pt-20  flex flex-col-reverse lg:flex-row items-center justify-between gap-5  bg-[#212428] text-white "
+      className="min-h-screen pt-32 md:pt-26  flex flex-col-reverse lg:flex-row items-center justify-between gap-5  bg-[#212428] text-white px-4 xl:px-0"
     >
       {/* Left - Text Area */}
       <motion.div
@@ -31,11 +31,11 @@ const Hero = () => {
       >
         <h1 className="text-4xl md:text-6xl font-bold">
           <p className="mb-4"> Hi, I'm</p>
-          <p className="text-[#ff014f] font-bold uppercase lg:text-[4rem]">
+          <p className="text-[#ff014f] font-bold uppercase xl:text-[4rem]">
             Md. Ramjan Ali
           </p>
         </h1>
-        <h2 className="text-2xl md:text-3xl font-semibold">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
           <Typewriter
             words={["Full Stack Web Developer", "MERN Stack Developer"]}
             loop={false}
@@ -48,27 +48,29 @@ const Hero = () => {
         </h2>
         <p
           data-aos="fade-up"
-          className="text-gray-300 text-base leading-relaxed max-w-md"
+          className="text-gray-300 text-base leading-relaxed max-w-md px-2 xl:px-0"
         >
           I build responsive, scalable web applications using the MERN stack and
           modern frontend tools.
         </p>
-        <motion.a
-          href="/Resume_of_Ramjan_Ali.pdf"
-          target="_blank"
-          download="Resume_of_Ramjan_Ali.pdf"
-          rel="noopener noreferrer"
-          className="flex w-fit gap-2  px-6 py-3 font-medium text-white group bg-[#ff014f] overflow-hidden rounded-full "
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <span>
-            <RiDownloadLine size={24} />
-          </span>
-          Resume
-        </motion.a>
+        <div className="flex items-center justify-center md:justify-start">
+          <motion.a
+            href="/Resume_of_Ramjan_Ali.pdf"
+            target="_blank"
+            download="Resume_of_Ramjan_Ali.pdf"
+            rel="noopener noreferrer"
+            className="flex w-fit gap-2  px-6 py-3 font-medium text-white group bg-[#ff014f] overflow-hidden rounded-full "
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span>
+              <RiDownloadLine size={24} />
+            </span>
+            Resume
+          </motion.a>
+        </div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row justify-between items-center">
           {/* contact icon */}
           <div className="">
             <p className="mt-6 mb-3 uppercase">Find With Me</p>

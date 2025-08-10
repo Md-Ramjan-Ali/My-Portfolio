@@ -39,7 +39,7 @@ const MyExperience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen bg-[#212428] py-5 text-gray-300 "
+      className="min-h-screen bg-[#212428] py-5 text-gray-300 px-2 md:px-4 xl:px-0"
     >
       <div className="flex flex-col lg:flex-row items-center gap-12">
         {/* Left Image */}
@@ -66,7 +66,7 @@ const MyExperience = () => {
           viewport={{ once: false }}
         >
           <p
-            className="text-[#ff014f]  font-medium  uppercase "
+            className="text-[#ff014f]  font-medium  uppercase text-center md:text-left tracking-widest"
             style={{ letterSpacing: "8px" }}
           >
             Learning Experience
@@ -88,10 +88,10 @@ const MyExperience = () => {
               />
             </span>
           </h2> */}
-          <h2 className="text-4xl font-bold text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center md:text-left">
             I am Learning More Technologies
           </h2>
-          <p className="">
+          <p className="text-center md:text-left">
             Though I am a fresher, I have hands-on experience through intensive
             project-based learning.
           </p>

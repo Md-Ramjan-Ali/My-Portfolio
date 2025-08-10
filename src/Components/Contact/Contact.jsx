@@ -46,7 +46,7 @@ const Contact = () => {
           Contact
         </p>
         <h2
-          className="text-4xl font-bold text-white"
+          className="text-3xl lg:text-4xl font-bold text-white"
           data-aos="fade-up"
           data-aos-delay="100"
         >

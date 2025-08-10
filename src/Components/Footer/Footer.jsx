@@ -5,7 +5,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#212428] text-gray-400 py-5 border-t-1 border-[#15171b]">
-      <div className="w-11/12 mx-auto flex justify-between px-5 lg:px-0">
+      <div className="w-11/12 mx-auto flex flex-col md:flex-row items-center justify-between px-5 lg:px-0">
         <div className="flex items-center gap-1">
           <span>© {new Date().getFullYear()} || </span>
           <div className="flex items-center">

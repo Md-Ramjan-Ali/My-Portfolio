@@ -1,5 +1,4 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import about from "../../assets/heroPortfolio.png";
 
@@ -7,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen pt-24  lg:pt-0 bg-[#212428] text-white flex flex-col lg:flex-row items-center gap-5"
+      className="min-h-screen pt-24  xl:pt-0 bg-[#212428] text-white flex flex-col lg:flex-row items-center gap-5"
     >
       {/* Left Side - Image */}
       <motion.div
@@ -28,7 +27,7 @@ const About = () => {
 
       {/* Right Side - Content */}
       <div
-        className="lg:w-1/2 space-y-6 px-2"
+        className="lg:w-1/2 space-y-6 px-2 md:px-4 xl:px-0 text-center md:text-left"
         data-aos="fade-up"
         data-aos-duration="2000"
         data-aos-once="false"
@@ -46,7 +45,7 @@ const About = () => {
         </p>
 
         {/* Info Table */}
-        <table className="w-full text-sm text-gray-300 border-t border-b border-gray-600 py-4 text-left">
+        <div className="w-full text-sm text-gray-300 border-t border-b border-gray-600 py-4 text-center md:text-left">
           {/* Responsive Info Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-4 text-sm text-gray-300">
             {/* Row 1 */}
@@ -66,7 +65,7 @@ const About = () => {
             </div>
             <div className="flex flex-col md:flex-row md:items-center gap-2">
               <span className="font-medium text-gray-400  md:w-32">Email:</span>
-              <span>gmramjanali8888@gamil.com</span>
+              <span>gmramjanali8888@gmail.com</span>
             </div>
 
             {/* Row 3 */}
@@ -83,7 +82,7 @@ const About = () => {
               <span>Bangladeshi</span>
             </div>
           </div>
-        </table>
+        </div>
 
         <div className="pt-4">
           <p className="text-gray-400 font-bold text-xl uppercase">

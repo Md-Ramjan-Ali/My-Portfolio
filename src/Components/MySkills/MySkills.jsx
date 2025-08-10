@@ -83,7 +83,7 @@ const MySkills = () => {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 px-4 xl:px-0"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
@@ -105,7 +105,7 @@ const MySkills = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="bg-[#1e1f24] hover:scale-105 delay-100 cursor-pointer w-full h-36 rounded-xl flex flex-col justify-center items-center gap-3 shadow-xl hover:shadow-xl transition-all "
+              className="bg-[#1e1f24] hover:scale-105 delay-100 cursor-pointer w-full h-36 rounded-xl flex flex-col justify-center items-center gap-3 shadow-xl hover:shadow-xl transition-all"
             >
               <div>{skill.icon}</div>
               <h4 className="text-lg font-semibold text-gray-100">

@@ -9,7 +9,14 @@ const Projects = () => {
 
   useEffect(() => {
     axios.get("projectsData.json").then((res) => setProjects(res.data));
-  }, []);
+
+     if (selectedProject) {
+       const modal = document.getElementById("my_project_model");
+       if (modal) {
+         modal.showModal();
+       }
+     }
+  }, [selectedProject]);
 
   return (
     <div
@@ -27,7 +34,7 @@ const Projects = () => {
           Featured
         </motion.p>
         <motion.h2
-          className="text-5xl font-bold text-gray-100 mb-10"
+          className="text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-100 mb-10"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2 }}
@@ -64,7 +71,7 @@ const Projects = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => {
                 setSelectedProject(project);
-                document.getElementById("my_project_model").showModal();
+                // document.getElementById("my_project_model").showModal();
               }}
               className="inline-block border px-4 py-2 rounded hover:bg-[#ff014f] text-white hover:border-0 transition text-sm cursor-pointer"
             >
