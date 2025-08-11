@@ -1,8 +1,44 @@
 [
   {
     "id": 1,
-    "project_name": "Volunteer Management System",
-    "project_image": "https://i.ibb.co/ycL812WK/volunteer-management.jpg",
+    "project_name": "TechLooma — Product Launch Review Platform",
+    "project_image": "https://i.ibb.co.com/W4vJtNCF/Chat-GPT-Image-Aug-11-2025-12-42-17-PM.png",
+    "project_details_image": "https://i.ibb.co.com/CktmhJw/Screenshot-2025-08-08-121356.png",
+    "type": "Website",
+    "country": "Bangladesh",
+    "languages": [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "JavaScript",
+      "React",
+      "React Router",
+      "TanStack Query",
+      "Firebase",
+      "JWT",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe"
+    ],
+    "techStack": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe"
+    ],
+    "description": "TechLooma is a modern platform where users can discover, post, upvote, and review tech products with role-based access and subscription features.",
+    "liveLink": "https://techlooma-359e0.web.app/",
+    "githubClient": "https://github.com/Md-Ramjan-Ali/TechLooma-client-side",
+    "githubServer": "https://github.com/Md-Ramjan-Ali/TechLooma-Server",
+    "challenges": "Implementing role-based permissions, integrating Stripe payments, and managing real-time product review updates.",
+    "futurePlans": "Add AI-powered product recommendations, implement product category filters, and build an advanced analytics dashboard for admins."
+  },
+  {
+    "id": 2,
+    "project_name": "SebaConnect— Volunteer Management System",
+    "project_image": "https://i.ibb.co.com/vvHVrPrH/Whats-App-Image-2025-08-11-at-13-31-02-d66eb5f3.jpg",
     "project_details_image": "https://i.ibb.co/DD4YhNgd/Volunteer-managemant.png",
     "type": "Website",
     "country": "Bangladesh",
@@ -24,9 +60,9 @@
     "futurePlans": "Add admin analytics and volunteer badges."
   },
   {
-    "id": 2,
-    "project_name": "Freelance Task Marketplace",
-    "project_image": "https://i.ibb.co/RtG2Fvs/Job-Pond-Image.png",
+    "id": 3,
+    "project_name": "JobPond— Freelance Task Marketplace",
+    "project_image": "https://i.ibb.co.com/5Xs8Y4Cm/Chat-GPT-Image-Aug-11-2025-12-55-38-PM.png",
     "project_details_image": "https://i.ibb.co/0pZ9PdZp/freelancer-marketplace.png",
     "type": "Website",
     "country": "Bangladesh",
@@ -48,8 +84,8 @@
     "futurePlans": "Add escrow payment and chat features."
   },
   {
-    "id": 3,
-    "project_name": "Event Explorer",
+    "id": 4,
+    "project_name": "Eventora— Event Explorer",
     "project_image": "https://i.ibb.co/21wpkspZ/event-explor.jpg",
     "project_details_image": "https://i.ibb.co/s9FYJ08Y/Screenshot-2025-06-30-030743.png",
     "type": "Website",

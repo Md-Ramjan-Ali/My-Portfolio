@@ -10,13 +10,13 @@ const ProjectDetailsModal = ({ project }) => {
           </button>
         </form>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6 lg:pt-0">
+        <div className="grid grid-cols-1 gap-6 pt-6">
           {/* Left: Image + buttons */}
           <div>
             <img
               src={project.project_details_image}
               alt={project.project_name}
-              className="rounded-xl w-full h-full mb-4"
+              className="rounded-xl w-full mb-4"
             />
           </div>
 

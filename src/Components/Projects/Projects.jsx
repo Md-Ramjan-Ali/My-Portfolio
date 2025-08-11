@@ -47,7 +47,7 @@ const Projects = () => {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="max-w-6xl mx-auto rounded-xl overflow-hidden relative group"
+          className="max-w-6xl mx-auto rounded-xl overflow-hidden relative group xl:px-36 bg-black"
         >
           {/* Project Image */}
           <img
