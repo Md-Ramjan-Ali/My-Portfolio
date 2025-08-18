@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../assets/logo.png";
+import { GrView } from "react-icons/gr";
 
 
 const Navbar = () => {
@@ -66,13 +67,16 @@ const Navbar = () => {
         {/* Right - Resume Button (Large screens) */}
         <div className="hidden lg:block">
           <motion.a
-            href="/Resume_of_Ramjan_Ali.pdf"
+            href="https://drive.google.com/file/d/1r6pl0VnQBx5URty53eZPHowWIkCHJ170/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className=" inline-block  px-6 py-2 font-extrabold text-white group bg-[#ff014f] overflow-hidden rounded-full "
+            className=" flex justify-center items-center gap-1  px-4 py-3 font-extrabold text-white group bg-[#ff014f] overflow-hidden rounded-full "
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
+            <span>
+              <GrView />
+            </span>
             Resume
           </motion.a>
         </div>
@@ -102,7 +106,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="/Resume_of_Ramjan_Ali.pdf"
+            href="https://drive.google.com/file/d/1r6pl0VnQBx5URty53eZPHowWIkCHJ170/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#ff014f]  px-4 py-2 rounded text-sm transition"

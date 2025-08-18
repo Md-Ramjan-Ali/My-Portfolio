@@ -55,9 +55,9 @@ const Hero = () => {
         </p>
         <div className="flex items-center justify-center md:justify-start">
           <motion.a
-            href="/Resume_of_Ramjan_Ali.pdf"
+            href="https://drive.google.com/uc?export=download&id=1r6pl0VnQBx5URty53eZPHowWIkCHJ170"
             target="_blank"
-            download="Resume_of_Ramjan_Ali.pdf"
+            download="https://drive.google.com/uc?export=download&id=1r6pl0VnQBx5URty53eZPHowWIkCHJ170"
             rel="noopener noreferrer"
             className="flex w-fit gap-2  px-6 py-3 font-medium text-white group bg-[#ff014f] overflow-hidden rounded-full "
             whileHover={{ scale: 1.05 }}
