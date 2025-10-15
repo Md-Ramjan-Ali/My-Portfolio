@@ -65,7 +65,7 @@ const About = () => {
             </div>
             <div className="flex flex-col md:flex-row md:items-center gap-2">
               <span className="font-medium text-gray-400  md:w-32">Email:</span>
-              <span>gmramjanali8888@gmail.com</span>
+              <span>ramjanbd1999@gmail.com</span>
             </div>
 
             {/* Row 3 */}

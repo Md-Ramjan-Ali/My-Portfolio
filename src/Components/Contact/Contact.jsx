@@ -2,6 +2,7 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import contactImg from "../../assets/contactImg.png";
 import Swal from "sweetalert2";
@@ -81,7 +82,7 @@ const Contact = () => {
             </p>
             <p>
               <span className="xt-lg font-bold">Email :</span>{" "}
-              gmramjanali8888@gmail.com
+              ramjanbd1999@gmail.com
             </p>
           </div>
 

@@ -1,9 +1,10 @@
 // src/Pages/Home/Hero.jsx
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-
-import heroImg from "../../assets/ramjans.png";
+import heroImg1 from "../../assets/heroImage.png";
+// import heroImg from "../../assets/ramjans.png";
 import {
   FaFacebookF,
   FaGithub,
@@ -139,7 +140,7 @@ const Hero = () => {
         viewport={{ once: false }}
       >
         <img
-          src={heroImg}
+          src={heroImg1}
           alt="Ramjan"
           className="h-full object-center rounded-full"
         />
