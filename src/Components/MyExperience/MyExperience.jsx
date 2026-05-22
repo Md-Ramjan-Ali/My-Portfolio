@@ -1,37 +1,25 @@
 import React from "react";
 import { FaBriefcase } from "react-icons/fa";
+import { MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import workLogo from "../../assets/ExprienceImg.jpg";
 
 const experiences = [
-  // {
-  //   title: "Senior System Engineer",
-  //   company: "eThemeStudio",
-  //   duration: "2018 - Running",
-  //   description:
-  //     "Led the development and deployment of scalable systems with a focus on reliability and performance.",
-  // },
-  // {
-  //   title: "Data Architect",
-  //   company: "Easy Computers",
-  //   duration: "2015 - 2018",
-  //   description:
-  //     "Designed and maintained data architecture and pipelines, ensuring data quality and accessibility across projects.",
-  // },
-  // {
-  //   title: "Web Developer",
-  //   company: "Bangla College",
-  //   duration: "2012 - 2015",
-  //   description:
-  //     "Built dynamic websites and applications using modern web technologies with a user-focused approach.",
-  // },
   {
-    title: "Full Stack Web Development Learner",
-    company: "Programming Hero Academy",
-    duration: "2023 - Present",
+    title: "Frontend Developer",
+    company: "Softvence Agency",
+    location: "99 Bir Uttam A.K. Khandakar Road, Mohakhali C/A, Dhaka-1212",
+    duration: "Dec 2025 – Present",
     description:
-      "Completed a professional full stack development course focusing on the MERN stack. Built real-world projects using React, Firebase, Node.js, and MongoDB. Gained practical skills in authentication, REST APIs, and responsive UI design.",
+      "Front-End Development with React.js, emphasizing UI maintenance and responsiveness. Building reusable and maintainable UI components. Integrating REST APIs and managing async data efficiently. Optimizing performance using code splitting and lazy loading. Working closely with designers and backend developers.",
+    responsibilities: [
+      "Front-End Development: Skilled in React.js, emphasizing UI maintenance and responsiveness.",
+      "Component Architecture: Build reusable and maintainable UI components.",
+      "API Integration: Integrate REST APIs and manage async data efficiently.",
+      "Performance Optimization: Optimize performance using code splitting and lazy loading.",
+      "Team Collaboration: Work closely with designers and backend developers.",
+    ],
   },
 ];
 
@@ -69,16 +57,13 @@ const MyExperience = () => {
             className="text-[#ff014f]  font-medium  uppercase text-center md:text-left tracking-widest"
             style={{ letterSpacing: "8px" }}
           >
-            Learning Experience
-          </p>
-          {/* <p className="text-green-400 font-medium tracking-widest uppercase">
             Work Experience
-          </p> */}
-          {/* <h2 className="text-4xl font-bold text-white">
+          </p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center md:text-left">
             I Worked As{" "}
-            <span className="text-green-500">
+            <span className="text-[#ff014f]">
               <Typewriter
-                words={["Web Developer",]}
+                words={["Frontend Developer"]}
                 loop
                 cursor
                 cursorStyle="_"
@@ -87,19 +72,11 @@ const MyExperience = () => {
                 delaySpeed={1000}
               />
             </span>
-          </h2> */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center md:text-left">
-            I am Learning More Technologies
           </h2>
           <p className="text-center md:text-left">
-            Though I am a fresher, I have hands-on experience through intensive
-            project-based learning.
+            Over the months, I've gained valuable professional experience in developing
+            and architecting modern web applications at Softvence Agency.
           </p>
-          {/* <p className="">
-            Over the years, I've gained valuable experience in developing,
-            designing, and architecting software systems and web applications
-            across different industries.
-          </p> */}
 
           {/* Experience Cards */}
           <div className="">
@@ -119,10 +96,28 @@ const MyExperience = () => {
                   <h3 className="text-xl font-semibold text-white">
                     {item.title}
                   </h3>
-                  <p className="text-sm font-medium ">
-                    {item.company} <span className="">({item.duration})</span>
+                  <p className="text-sm font-medium text-[#ff014f]">
+                    {item.company}{" "}
+                    <span className="text-gray-400">({item.duration})</span>
                   </p>
-                  <p className="text-sm mt-2 ">{item.description}</p>
+                  {item.location && (
+                    <p className="text-xs text-gray-500 mt-1 flex items-center gap-1">
+                      <MapPin size={12} className="text-[#ff014f]" />
+                      {item.location}
+                    </p>
+                  )}
+                  {item.responsibilities ? (
+                    <ul className="text-sm mt-2 space-y-1 list-none">
+                      {item.responsibilities.map((resp, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <span className="text-[#ff014f] mt-0.5">☛</span>
+                          <span>{resp}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm mt-2">{item.description}</p>
+                  )}
                 </div>
               </motion.div>
             ))}
