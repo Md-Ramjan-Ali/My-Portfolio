@@ -6,6 +6,7 @@ import ProjectDetailsModal from "../ProjectDetailsModal/ProjectDetailsModal";
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     axios.get("projectsData.json").then((res) => setProjects(res.data));
@@ -17,6 +18,8 @@ const Projects = () => {
        }
      }
   }, [selectedProject]);
+
+  const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <div
@@ -44,7 +47,7 @@ const Projects = () => {
         </motion.h2>
       </div>
 
-      {projects.map((project) => (
+      {visibleProjects.map((project) => (
         <div
           key={project.id}
           className="max-w-6xl mx-auto rounded-xl overflow-hidden relative group xl:px-36 bg-black"
@@ -94,6 +97,34 @@ const Projects = () => {
           </div>
         </div>
       ))}
+
+      {/* See More / See Less Button */}
+      {projects.length > 3 && (
+        <div className="flex justify-center pt-6">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="flex flex-col items-center gap-1.5 text-gray-400 hover:text-white transition-colors duration-300 font-medium cursor-pointer"
+          >
+            <span className="text-base tracking-wide">{showAll ? "See Less" : "See more"}</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2.5}
+              stroke="currentColor"
+              className={`w-5 h-5 transform transition-transform duration-300 ${
+                showAll ? "rotate-180" : "group-hover:translate-y-0.5"
+              }`}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      )}
       {/* open project model */}
       {selectedProject && (
         <ProjectDetailsModal project={selectedProject}></ProjectDetailsModal>
