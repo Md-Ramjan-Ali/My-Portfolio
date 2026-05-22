@@ -74,7 +74,6 @@ const Projects = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => {
                 setSelectedProject(project);
-                // document.getElementById("my_project_model").showModal();
               }}
               className="inline-block border px-4 py-2 rounded hover:bg-[#ff014f] text-white hover:border-0 transition text-sm cursor-pointer"
             >
