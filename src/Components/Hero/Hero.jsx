@@ -56,9 +56,9 @@ const Hero = () => {
         </p>
         <div className="flex items-center justify-center md:justify-start">
           <motion.a
-            href="https://drive.google.com/uc?export=download&id=1r6pl0VnQBx5URty53eZPHowWIkCHJ170"
+            href="https://drive.google.com/file/d/1r6pl0VnQBx5URty53eZPHowWIkCHJ170/view?usp=sharing"
             target="_blank"
-            download="https://drive.google.com/uc?export=download&id=1r6pl0VnQBx5URty53eZPHowWIkCHJ170"
+            download="https://drive.google.com/file/d/1r6pl0VnQBx5URty53eZPHowWIkCHJ170/view?usp=sharing"
             rel="noopener noreferrer"
             className="flex w-fit gap-2  px-6 py-3 font-medium text-white group bg-[#ff014f] overflow-hidden rounded-full "
             whileHover={{ scale: 1.05 }}
