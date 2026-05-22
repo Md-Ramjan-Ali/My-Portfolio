@@ -81,10 +81,12 @@ const Navbar = () => {
           </motion.a>
         </div>
 
-        {/* Mobile Menu Icon */}
-        <div className=" lg:hidden z-50 cursor-pointer" onClick={toggleMenu}>
-          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </div>
+        {/* Mobile Menu Icon - only show when sidebar is closed */}
+        {!isOpen && (
+          <div className=" lg:hidden z-50 cursor-pointer" onClick={toggleMenu}>
+            <FaBars size={24} />
+          </div>
+        )}
       </div>
 
       {/* Mobile Slide-in Sidebar */}
