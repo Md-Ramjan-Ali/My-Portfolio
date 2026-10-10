@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// eslint-disable-next-line react-refresh/only-export-components
 function AosProvider({ children }) {
   useEffect(() => {
     AOS.init({
