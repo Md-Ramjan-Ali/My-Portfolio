@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#212428] text-white shadow-md py-5">
-      <div className="flex justify-between items-center max-w-11/12 mx-auto px-5 lg:px-0">
+      <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 xl:px-0">
         {/* Left - Logo */}
         <Link
           to="home"
@@ -67,7 +67,7 @@ const Navbar = () => {
         {/* Right - Resume Button (Large screens) */}
         <div className="hidden lg:block">
           <motion.a
-            href="https://drive.google.com/file/d/1r6pl0VnQBx5URty53eZPHowWIkCHJ170/view?usp=sharing"
+            href="https://drive.google.com/file/d/1csvW5YaPwyioHMecNtI0sQRg-exJQ2UG/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className=" flex justify-center items-center gap-1  px-4 py-3 font-extrabold text-white group bg-[#ff014f] overflow-hidden rounded-full "
@@ -168,7 +168,7 @@ const Navbar = () => {
               {/* Sidebar Footer - Resume Button */}
               <div className="px-6 py-6 border-t border-gray-700/50">
                 <motion.a
-                  href="https://drive.google.com/file/d/1r6pl0VnQBx5URty53eZPHowWIkCHJ170/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1csvW5YaPwyioHMecNtI0sQRg-exJQ2UG/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex justify-center items-center gap-2 w-full bg-[#ff014f] px-4 py-3 rounded-full text-white font-bold transition hover:opacity-90"
