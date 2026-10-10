@@ -9,14 +9,14 @@ import Projects from "../../Components/Projects/Projects";
 
 const Home = () => {
   return (
-    <div className=" text-white max-w-screen-xl mx-auto">
-      <Hero></Hero>
-      <About></About>
-      <MySkills></MySkills>
-      <MyExperience></MyExperience>
-      <MyEducation></MyEducation>
-      <Projects></Projects>
-      <Contact></Contact>
+    <div className="text-white w-full">
+      <Hero />
+      <About />
+      <MySkills />
+      <MyExperience />
+      <MyEducation />
+      <Projects />
+      <Contact />
     </div>
   );
 };

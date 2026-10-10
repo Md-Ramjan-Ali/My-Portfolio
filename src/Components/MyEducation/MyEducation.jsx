@@ -7,14 +7,14 @@ const educationData = [
   {
     degree: "Complete Web Development Course",
     institute: "Programming Hero",
-    duration: "2023 - 2025",
+    duration: "2022 - 2025",
     description:
       "Currently pursuing a complete web development course focusing on modern technologies including React, Node.js, MongoDB, Firebase, and Express.",
   },
   {
     degree: "Bachelor of Arts (BA)",
     institute: "National University",
-    duration: "2021 - Running",
+    duration: "2021 - 2026",
     description:
       "Pursuing a Bachelor of Arts degree at the National University of Bangladesh while actively learning and building projects in programming alongside.",
   },
@@ -24,9 +24,9 @@ const MyEducation = () => {
   return (
     <section
       id="education"
-      className="min-h-screen bg-[#212428] py-10 px-4 xl:px-0 text-gray-300"
+      className="min-h-screen bg-[#212428] py-20 text-gray-300 flex items-center justify-center w-full"
     >
-      <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
+      <div className="max-w-screen-xl mx-auto w-full px-4 xl:px-0 flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Left - Education Content */}
         <motion.div
           className="w-full lg:w-1/2 space-y-6"
