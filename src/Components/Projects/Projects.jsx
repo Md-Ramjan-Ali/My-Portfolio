@@ -22,11 +22,12 @@ const Projects = () => {
   const visibleProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
-    <div
+    <section
       id="projects"
-      className="bg-[#212428] text-white py-10 px-4 space-y-14"
+      className="bg-[#212428] text-white py-20 w-full"
     >
-      <div className="text-center">
+      <div className="max-w-screen-xl mx-auto w-full px-4 xl:px-0 space-y-14">
+        <div className="text-center">
         <motion.p
           className="text-[#ff014f] uppercase tracking-widest text-sm font-semibold mb-2"
           initial={{ opacity: 0, x: 100 }}
@@ -128,7 +129,8 @@ const Projects = () => {
       {selectedProject && (
         <ProjectDetailsModal project={selectedProject}></ProjectDetailsModal>
       )}
-    </div>
+      </div>
+    </section>
   );
 };
 
