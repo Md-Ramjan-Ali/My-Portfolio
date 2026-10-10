@@ -7,18 +7,18 @@ import workLogo from "../../assets/ExprienceImg.jpg";
 
 const experiences = [
   {
-    title: "Frontend Developer",
+    title: "Full-stack Developer",
     company: "Softvence Agency",
     location: "99 Bir Uttam A.K. Khandakar Road, Mohakhali C/A, Dhaka-1212",
-    duration: "Dec 2025 – Present",
+    duration: "Jun 2024 – Aug 2026",
     description:
       "Front-End Development with React.js, emphasizing UI maintenance and responsiveness. Building reusable and maintainable UI components. Integrating REST APIs and managing async data efficiently. Optimizing performance using code splitting and lazy loading. Working closely with designers and backend developers.",
     responsibilities: [
-      "Front-End Development: Skilled in React.js, emphasizing UI maintenance and responsiveness.",
-      "Component Architecture: Build reusable and maintainable UI components.",
-      "API Integration: Integrate REST APIs and manage async data efficiently.",
-      "Performance Optimization: Optimize performance using code splitting and lazy loading.",
-      "Team Collaboration: Work closely with designers and backend developers.",
+      "Full-Stack Architecture: Engineered and deployed full-stack web applications using Next.js, React, Node.js, and Express.js, ensuring high performance and scalable system design.",
+      "Backend & API Design: Designed and integrated secure RESTful APIs with JWT authentication and efficient MongoDB queries to streamline data processing.",
+      "UI/UX & Component Architecture: Built modular, reusable, and accessible UI components using TypeScript and Tailwind CSS, improving code maintainability.",
+      "Performance Optimization: Optimized web application speed by implementing dynamic imports, code splitting, and caching strategies, reducing load times significantly.",
+      " Cross-Functional Collaboration: Partnered with UI/UX designers and product managers to deliver seamless client-facing features from concept to deployment.",
     ],
   },
 ];
@@ -27,9 +27,9 @@ const MyExperience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen bg-[#212428] py-5 text-gray-300 px-2 md:px-4 xl:px-0"
+      className="min-h-screen bg-[#212428] py-20 text-gray-300 flex items-center justify-center w-full"
     >
-      <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="max-w-screen-xl mx-auto w-full px-4 xl:px-0 flex flex-col lg:flex-row items-center gap-12">
         {/* Left Image */}
         <motion.div
           className="w-full lg:w-1/2 lg:pt-5 "
@@ -63,7 +63,7 @@ const MyExperience = () => {
             I Worked As{" "}
             <span className="text-[#ff014f]">
               <Typewriter
-                words={["Frontend Developer"]}
+                words={["Full-stack Developer"]}
                 loop
                 cursor
                 cursorStyle="_"
@@ -107,13 +107,27 @@ const MyExperience = () => {
                     </p>
                   )}
                   {item.responsibilities ? (
-                    <ul className="text-sm mt-2 space-y-1 list-none">
-                      {item.responsibilities.map((resp, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <span className="text-[#ff014f] mt-0.5">☛</span>
-                          <span>{resp}</span>
-                        </li>
-                      ))}
+                    <ul className="text-sm mt-2 space-y-2 list-none">
+                      {item.responsibilities.map((resp, i) => {
+                        const colonIndex = resp.indexOf(":");
+                        const hasColon = colonIndex !== -1;
+                        const title = hasColon ? resp.substring(0, colonIndex + 1) : "";
+                        const description = hasColon ? resp.substring(colonIndex + 1) : resp;
+
+                        return (
+                          <li key={i} className="flex items-start gap-2">
+                            <span className="text-[#ff014f] mt-0.5 flex-shrink-0">☛</span>
+                            <span>
+                              {hasColon && (
+                                <strong className="font-bold text-white mr-1.5">
+                                  {title.trim()}
+                                </strong>
+                              )}
+                              {description}
+                            </span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   ) : (
                     <p className="text-sm mt-2">{item.description}</p>
